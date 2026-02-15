@@ -1,1 +1,53 @@
-
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": "stack",
+      "title": "NZBGet",
+      "description": "Your NZBGet stack using your standard /docker layout",
+      "categories": ["Media", "Usenet"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nzbget-logo.png",
+      "repository": {
+        "url": "https://github.com/wriza/portainer-templates",
+        "stackfile": "nzbget/docker-compose.yml"
+      }
+    },
+    {
+      "type": "stack",
+      "title": "Radarr",
+      "description": "Your Radarr stack",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr-logo.png",
+      "repository": {
+        "url": "https://github.com/wriza/portainer-templates",
+        "stackfile": "radarr/docker-compose.yml"
+      }
+    },
+    {
+      "type": "stack",
+      "title": "Sonarr",
+      "description": "Your Sonarr stack",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-logo.png",
+      "repository": {
+        "url": "https://github.com/wriza/portainer-templates",
+        "stackfile": "sonarr/docker-compose.yml"
+      }
+    },
+    {
+      "type": "stack",
+      "title": "Gluetun",
+      "description": "Your Gluetun VPN stack",
+      "categories": ["Networking", "VPN"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/qdm12/gluetun/master/logo.png",
+      "repository": {
+        "url": "https://github.com/wriza/portainer-templates",
+        "stackfile": "gluetun/docker-compose.yml"
+      }
+    }
+  ]
+}
